@@ -1,9 +1,11 @@
 # AMZSpider Frontend Script
 
-[onRowSelected Example](#onRowSelected-Example)<br/>
-[another Example](#another)
+<ul>
+    <li>[onRowSelected Example](#onRowSelected-Example)</li>
+    <li>[another Example](#another)</li>
+</ul>
 
-
+<br/><br/><br/><br/>
 ## onRowSelected Example
 ```html
 <button class="grid-function-link dropdown-toggle" type="button" id="action-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
