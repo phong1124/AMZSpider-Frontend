@@ -1,1 +1,1 @@
-# AMZSpider-Frontend
+# AMZSpider Frontend
