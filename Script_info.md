@@ -1,7 +1,5 @@
-# AMZSpider Frontend Script
-
-[onRowSelected Example](#onRowSelected-Example)<br/>
-[another Example](#another)
+* [onRowSelected Example](#onRowSelected-Example)
+* [another Example](#another)
 
 
 <br/><br/><br/><br/>
