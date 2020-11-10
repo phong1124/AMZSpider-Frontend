@@ -1,9 +1,8 @@
 # AMZSpider Frontend Script
 
-<ul>
-    <li>[onRowSelected Example](#onRowSelected-Example)</li>
-    <li>[another Example](#another)</li>
-</ul>
+[onRowSelected Example](#onRowSelected-Example)<br/>
+[another Example](#another)
+
 
 <br/><br/><br/><br/>
 ## onRowSelected Example
