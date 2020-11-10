@@ -1,5 +1,43 @@
 # AMZSpider Frontend
 
+## Tag Cell Example
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    min-height: 100vh;
+}
+.test-block {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test-block .test-block-item {
+    /* width: 400px; */
+    height: 500px;
+}
+.test-block .test-block-item .test-block-content {
+
+}
+
+.tag-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 20px;
+}
+.tag-cell .tag-item {
+    width: 10px;
+    height: 15px;
+}
+```
+
 ```javascript
 var tag_data = [
     {
