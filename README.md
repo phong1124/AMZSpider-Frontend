@@ -1,6 +1,21 @@
 # AMZSpider Frontend
 
 ## Tag Cell Example
+
+```html
+<main>
+    <div class="test-block">
+        <div class="test-block-item">
+            <div class="test-block-content" id="tags">
+                <div class="tag-cell">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+```
+
 ```css
 * {
     margin: 0;
