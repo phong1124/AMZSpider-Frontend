@@ -1,87 +1,29 @@
-# AMZSpider Frontend
+# AMZSpider Frontend Script
 
-## Tag Cell Example
+[onRowSelected Example](onRowSelected-Example)
 
 ```html
-<main>
-    <div class="test-block">
-        <div class="test-block-item">
-            <div class="test-block-content" id="tags">
-                <div class="tag-cell">
+<button class="grid-function-link dropdown-toggle" type="button" id="action-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
+    Action on <span data-id="selected-products">0</span> selected
+</button>
 
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-```
-
-```css
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-main {
-    min-height: 100vh;
-}
-.test-block {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.test-block .test-block-item {
-    /* width: 400px; */
-    height: 500px;
-}
-.test-block .test-block-item .test-block-content {
-
-}
-
-.tag-cell {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 20px;
-}
-.tag-cell .tag-item {
-    width: 10px;
-    height: 15px;
-}
 ```
 
 ```javascript
-var tag_data = [
-    {
-        name: "Tag 1",
-        color: "red"
-    },
-    {
-        name: "Tag 2",
-        color: "green"
-    },
-    {
-        name: "Tag 3",
-        color: "blue"
+
+var gridOptions = {
+    ....
+    onRowSelected: onRowSelected,
+    ...
+}
+
+function onRowSelected(e) {
+    var selected_rows = gridOptions.api.getSelectedRows().length;
+    $('[data-id="selected-products"]').html(selected_rows);
+    if (selected_rows > 0) {
+        $('#action-dropdown').removeAttr("disabled");
+    } else {
+        $('#action-dropdown').attr("disabled", true);
     }
-];
-
-$(document).ready(function() {
-    tag_data.map(item => {
-        var tag_item = document.createElement('span');
-
-        tag_item.className = "tag-item";
-        tag_item.setAttribute("data-toggle", "tooltip");
-        tag_item.setAttribute("data-placement", "bottom");
-        tag_item.setAttribute("title", item.name);
-        tag_item.style.backgroundColor = item.color;
-
-        $(tag_item).tooltip();
-
-        document.querySelector('.tag-cell').appendChild(tag_item);
-    })
-})
+}
 ```
