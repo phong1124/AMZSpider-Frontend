@@ -110,7 +110,18 @@ function onRowSelected(e) {
      "node.data.overall_rating == 1",
  ];
  
+  $('.rating-filter-item input').on('click', function (e) {
+     if (!$('.rating-filter-item input:checked').length) {
+         e.preventDefault();
+         return;
+     }
+ })
+ 
   $('.rating-filter-item input').on('change', function (e) {
+      if (!$('.rating-filter-item input:checked').length) {
+         e.preventDefault();
+         return;
+     }
      var rating_id = $(this).attr("id"),
          rating_count = parseInt(rating_id.substring(rating_id.length - 1, rating_id.length));
 
