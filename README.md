@@ -3,8 +3,6 @@
 ## Basic Button with 3 child divs
 
 ```html
-// Basic Button with 3 child divs
-
 <div className="button">
     <div className="btn-wrapper">
         <div className="btn-icon-wrapper">
@@ -24,8 +22,6 @@
 ## Basic Button with 2 child divs
 
 ```html
-// Basic Button with 2 child divs
-
 <div className="button">
     <div className="btn-wrapper">
         <div className="btn-icon-wrapper">
@@ -42,7 +38,6 @@
 ## Basic Button with 1 divs
 
 ```html
-// Basic Button with 1 divs
 <div className="button">
     <div className="btn-wrapper">
         <div class="btn-text-wrapper">
@@ -56,7 +51,6 @@
 ## Rounded Button
 
 ```html
-// Rounded Button
 <div class="button btn-rounded">
     <div class="btn-wrapper">
         <div class="btn-icon-wrapper">
